@@ -7,8 +7,7 @@ Created on Mon Dec 16 17:53:46 2024
 
 import streamlit as st
 from openai import AzureOpenAI
-import Pinecone
-import ServerlessSpec
+from pinecone import Pinecone, ServerlessSpec
 import time
 import concurrent.futures
 from tqdm import tqdm
