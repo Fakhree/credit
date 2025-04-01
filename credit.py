@@ -84,7 +84,7 @@ def gpt_generate_response(chat_history, query, results):
         model="gpt-4o",
         temperature=0.2,
         messages=chat_history +[
-            {"role": "system", "content": "You are a helpful assistant to answer about Credit card terms for banks only in Hong Kong. Use the following results to answer the user's query, and you may search for more relatable context to give the best answer to your user, and if chat history is not related you can define context from query. Only answer queries related to Credit Card in Hong Kong. Answer unrelated queries as "Your question is unrelated, please ask me another question"},
+            {"role": "system", "content": "You are a helpful assistant to answer about Credit card terms for banks only in Hong Kong. Use the following results to answer the user's query, and you may search for more relatable context to give the best answer to your user, and if chat history is not related you can define context from query. Only answer queries related to Credit Card in Hong Kong. Answer unrelated queries as "Your question is unrelated, please ask me another question""},
             {"role": "user", "content": f"Query: {query}\n\n{context}"}
         ]
     )
